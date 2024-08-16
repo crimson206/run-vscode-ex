@@ -2,7 +2,7 @@
   "name": "run-code-extension",
   "displayName": "Run Code Extension",
   "description": "Run VSCode Extensions by writing run_vscode.yaml file. Use this with `run-vscode` python library together for the better experience.",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -18,7 +18,11 @@
     "commands": [
       {
         "command": "runVscode.combinePackageJSON",
-        "title": "Combine PackageJSON"
+        "title": "Run Code Extension: Combine PackageJSON"
+      },
+      {
+        "command": "runVscode.forceActivation",
+        "title": "Run Code Extension: Force Activation"
       }
     ],
     "configuration": {

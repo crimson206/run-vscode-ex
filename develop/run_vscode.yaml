@@ -1,0 +1,3 @@
+execute: false
+vscode:
+  - command: runVscode.combinePackageJSON

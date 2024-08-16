@@ -17,17 +17,16 @@ export function combinePackageJSON(): object {
 export function savePackageJSONToFile(): void {
     const combinedJSON = combinePackageJSON();
     const jsonString = JSON.stringify(combinedJSON, null, 2);
-    
     try {
         const config = vscode.workspace.getConfiguration('runVscode');
-        const outputDir = config.get<string>('outputDir') || "temp/run_vscode";
+        const outputDir = config.get<string>('outputDir');
 
         const workspaceFolder = vscode.workspace.workspaceFolders?.[0];
         if (!workspaceFolder) {
             throw new Error('No workspace folder found');
         }
 
-        const fullPath = path.join(workspaceFolder.uri.fsPath, outputDir, 'extension-packages.json');
+        const fullPath = path.join(workspaceFolder.uri.fsPath, outputDir!, 'extension-packages.json');
         
         const directory = path.dirname(fullPath);
         if (!fs.existsSync(directory)) {

@@ -10,4 +10,10 @@
     },
     // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
     "typescript.tsc.autoDetect": "off"
+
+    {
+        // The path where the package.json files of extensions will be saved.
+        "runVscode.outputDir": "development/temp/run_vscode"
+      
+      },
 }

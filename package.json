@@ -2,10 +2,11 @@
   "name": "run-code-extension",
   "displayName": "Run Code Extension",
   "description": "Run VSCode Extensions by writing run_vscode.yaml file. Use this with `run-vscode` python library together for the better experience.",
-  "version": "0.1.5",
+  "version": "0.1.9",
   "engines": {
     "vscode": "^1.91.0"
   },
+  "icon": "static/logo128.png",
   "categories": [
     "Other"
   ],
@@ -24,7 +25,7 @@
       "type": "object",
       "title": "Output path of the extensions' Info.",
       "properties": {
-        "myExtension.outputDir": {
+        "runVscode.outputDir": {
           "type": "string",
           "default": "temp/run_vscode",
           "description": "The path where the package.json files of extensions will be saved."
@@ -44,11 +45,9 @@
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
     "package": "vsce package",
+    "vs-publish": "vsce publish",
     "package:pre": "vsce package --pre-release",
-    "publish": "vsce publish",
-    "publish:pre": "vsce publish --pre-release",
-    "release": "npm run package2 && npm run publish",
-    "release:pre": "npm run package:pre && npm run publish:pre"
+    "release": "npm run package2 && npm run publish"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -81,10 +80,10 @@
   "publisher": "crimson206",
   "repository": {
     "type": "git",
-    "url": "https://github.com/crimson206/run-vscode"
+    "url": "https://github.com/crimson206/run-vscode-ex"
   },
   "bugs": {
-    "url": "https://github.com/crimson206/run-vscode/issues"
+    "url": "https://github.com/crimson206/run-vscode-ex/issues"
   },
-  "homepage": "https://github.com/crimson206/editor-capture"
+  "homepage": "https://github.com/crimson206/run-vscode-ex"
 }

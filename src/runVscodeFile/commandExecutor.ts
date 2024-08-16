@@ -15,9 +15,9 @@ function reportProgress(report: ProgressReport) {
     if (!workspaceFolders) return;
 
     const config = vscode.workspace.getConfiguration('runVscode');
-    const outputDir = config.get<string>('outputDir') || "temp/run_vscode";
+    const outputDir = config.get<string>('outputDir');
 
-    const progressFilePath = path.join(workspaceFolders[0].uri.fsPath, outputDir, 'vscode_extension_progress.json');
+    const progressFilePath = path.join(workspaceFolders[0].uri.fsPath, outputDir!, 'vscode_extension_progress.json');
     
     let reports: ProgressReport[] = [];
     if (fs.existsSync(progressFilePath)) {

@@ -22,3 +22,6 @@ noxfile.py
 **/requirements.txt
 **/requirements.in
 **/tool/_debug_server.py
+control.ipynb
+module/
+develop/

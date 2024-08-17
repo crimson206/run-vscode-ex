@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-DEdD30eg.js";import{useMDXComponents as i}from"./index-CcnH5Kt0.js";import"./index-RYns6xqu.js";function c(s){const n={code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",ul:"ul",...i(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{id:"run-code-extension",children:"Run Code Extension"}),`
+import{j as e}from"./jsx-runtime-DEdD30eg.js";import{useMDXComponents as i}from"./index-CcnH5Kt0.js";import"./index-RYns6xqu.js";function c(s){const n={code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",ul:"ul",...i(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{id:"quick-start",children:"Quick Start"}),`
 `,e.jsxs(n.p,{children:["run vscode extensions by generating ",e.jsx(n.code,{children:"run_vscode.yaml"})," file."]}),`
 `,e.jsx(n.h2,{id:"install",children:"Install"}),`
 `,e.jsxs(n.p,{children:["Search ",e.jsx(n.code,{children:"Run Code Extension"})," in the extension explore and install it."]}),`
@@ -29,4 +29,4 @@ This extension will detect the change, and execute the command, and change the b
 `,e.jsx(n.li,{children:"expected to be useful when programmatically controlling the extension behaviors"}),`
 `]}),`
 `]}),`
-`]})]})}function r(s={}){const{wrapper:n}={...i(),...s.components};return n?e.jsx(n,{...s,children:e.jsx(c,{...s})}):c(s)}export{r as default};
+`]})]})}function d(s={}){const{wrapper:n}={...i(),...s.components};return n?e.jsx(n,{...s,children:e.jsx(c,{...s})}):c(s)}export{d as default};

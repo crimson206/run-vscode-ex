@@ -3,3 +3,5 @@ out/
 dist/
 yarn.lock
 .yarnrc
+storybook-static/
+module/

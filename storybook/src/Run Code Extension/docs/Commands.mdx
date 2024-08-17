@@ -1,0 +1,39 @@
+# Commands
+
+## From `package.json`
+
+```json
+"commands": [
+  {
+    "command": "runVscode.combinePackageJSON",
+    "title": "Run Code Extension: Combine PackageJSON"
+  },
+  {
+    "command": "runVscode.forceActivation",
+    "title": "Run Code Extension: Force Activation"
+  }
+],
+```
+
+## Details
+
+### combinePackageJSON
+
+It generates a json file called `extension-packages.json` in the `outputDir`.
+The skeleton is below:
+
+```json
+{
+  "extension1_name": {
+    // extension1's package.json
+  },
+  "extension2_name": {
+    // extension2's package.json
+  },
+  // ...
+}
+```
+
+### forceActivation
+
+This command forces this extension activated. If it doesn't react to `run_vscode.yaml` file, try this command.

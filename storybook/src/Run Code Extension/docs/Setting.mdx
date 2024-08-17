@@ -1,0 +1,22 @@
+## Setting
+
+### From `package.json`
+
+```json
+"configuration": {
+    "type": "object",
+    "title": "Output path of the extensions' Info.",
+    "properties": {
+    "runVscode.outputDir": {
+        "type": "string",
+        "default": "temp/run_vscode",
+        "description": "The path where the package.json files of extensions will be saved."
+    }
+    }
+}
+```
+
+### In `.vscode/settings.json`:
+```json
+"runVscode.outputDir": "temp/run_vscode" // replace it with your preferred one
+```

@@ -2,7 +2,7 @@
   "name": "run-code-extension",
   "displayName": "Run Code Extension",
   "description": "Run VSCode Extensions by writing run_vscode.yaml file. Use this with `run-vscode` python library together for the better experience.",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -32,7 +32,7 @@
         "runVscode.outputDir": {
           "type": "string",
           "default": "temp/run_vscode",
-          "description": "The path where the package.json files of extensions will be saved."
+          "description": "The path where the output files from this extension will be saved."
         }
       }
     }

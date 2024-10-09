@@ -2,7 +2,7 @@
 
 This extension is basically to run vscode extensions programmatically.
 
-For more details, visit `Homepaage`. For the quick understanding of this extension, read `Core` or `Quick Start` page first.
+For more details, visit `Homepaage`. For the quick understanding of this extension, read [Core]([!linker]()) or `Quick Start` page first.
 
 - [Homepage](https://crimson206.github.io/run-vscode-ex/)
     : Blog Page including Docs

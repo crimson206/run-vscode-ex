@@ -25,7 +25,7 @@ const extensionConfig = {
   },
   resolve: {
     // support reading TypeScript and JavaScript files, 📖 -> https://github.com/TypeStrong/ts-loader
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js', 'tsx']
   },
   module: {
     rules: [
@@ -35,7 +35,8 @@ const extensionConfig = {
           /node_modules/,
           /module/,
           /storybook/,
-          /run-vscode-ex-dev/
+          /run-vscode-ex-dev/,
+          /typescript-notebook/
         ],
         use: [
           {

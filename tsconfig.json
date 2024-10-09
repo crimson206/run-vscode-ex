@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"module": "Node16",
+		"module": "NodeNext",
 		"target": "ES2022",
 		"lib": [
 			"ES2022"
@@ -17,6 +17,7 @@
 		"node_modules",
 		"module",
 		"storybook",
-		"run-vscode-ex-dev"
+		"run-vscode-ex-dev",
+		"typescript-notebook"
 	  ]
 }
